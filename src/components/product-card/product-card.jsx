@@ -1,7 +1,7 @@
 import styles from "./product.module.css";
+import PriceControls from "../price-controls/price-control";
 
 export default function ProductCard({ title, images, price }) {
-  console.log(styles);
   return (
     <div className={styles["product-card"]}>
       <span>{title}</span>
@@ -10,7 +10,7 @@ export default function ProductCard({ title, images, price }) {
         src={images[0]}
         alt="Product Image"
       />
-      <span>{price}</span>
+      <PriceControls>{price}</PriceControls>
     </div>
   );
 }

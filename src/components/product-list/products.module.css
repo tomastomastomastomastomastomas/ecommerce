@@ -1,6 +1,17 @@
 .products-list {
   display: grid;
   width: 100%;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 50px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .products-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .products-list {
+    grid-template-columns: repeat(5, 1fr);
+  }
 }
