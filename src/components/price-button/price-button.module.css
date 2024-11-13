@@ -5,3 +5,8 @@
   border-radius: 5px;
   padding: 0;
 }
+
+.disable {
+  cursor: default;
+  opacity: 0;
+}
